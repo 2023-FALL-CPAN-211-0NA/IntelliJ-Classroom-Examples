@@ -1,0 +1,29 @@
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.mf
+
+#build files
+build/
+build.xml
+
+#IntelliJ files
+*.iml
+.idea
+out/
+
+#Netbeans files
+nbproject/
+
+#Mac files
+.DS_Store
+
