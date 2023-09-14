@@ -33,12 +33,14 @@ class Circle extends Shape {
         this.radius = radius;
     }
 
-    @Override double area()
+    @Override
+    public double area()
     {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    @Override public String toString()
+    @Override
+    public String toString()
     {
         return "Circle color is '" + super.getColor()
                 + "' and area is : " + area();
@@ -49,8 +51,7 @@ class Rectangle extends Shape {
     double length;
     double width;
 
-    public Rectangle(String color, double length,
-                     double width)
+    public Rectangle(String color, double length, double width)
     {
         // calling Shape constructor
         super(color);
@@ -77,7 +78,7 @@ public class AbstractClassExample {
         System.out.println("Circle Area: " + s1.area());
         System.out.println("Rectangle Area: " + s2.area());
 
-        System.out.println(s1.toString());
-        System.out.println(s2.toString());
+        System.out.println(s1);
+        System.out.println(s2);
     }
 }
