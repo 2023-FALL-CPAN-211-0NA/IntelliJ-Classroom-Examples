@@ -35,8 +35,8 @@ public class ComparatorExample {
 
         List<Bank> banks = new ArrayList<>();
         banks.add(new TD());
-        banks.add(new CIBC());
         banks.add(new RBC());
+        banks.add(new CIBC());
         System.out.println("Before Sorting");
         printBankDetails(banks);
 

@@ -30,8 +30,8 @@ public class GenericsExample {
 
     //Generic Methods
     public static <T> void printList(List<T> list) {
-        for (T number : list) {
-            System.out.println(number);
+        for (T each : list) {
+            System.out.println(each);
         }
     }
 
