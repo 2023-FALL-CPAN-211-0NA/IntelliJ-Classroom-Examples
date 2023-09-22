@@ -8,9 +8,8 @@ public class BufferedInputOutputStreamsExample {
         String source = "week3_files/input.dat";
         String destination = "week3_files/output_with_buffering.dat";
 
-        try {
-            InputStream in = new BufferedInputStream(new FileInputStream(source));
-            OutputStream out = new BufferedOutputStream(new FileOutputStream(destination));
+        try (InputStream in = new BufferedInputStream(new FileInputStream(source));
+             OutputStream out = new BufferedOutputStream(new FileOutputStream(destination))) {
 
             System.out.println("Started File copy");
             EfficiencyCalculator.startRecording();
