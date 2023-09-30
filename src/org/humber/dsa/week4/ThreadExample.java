@@ -11,7 +11,6 @@ class CustomThread extends Thread {
 public class ThreadExample {
 
     public static void main(String[] args) {
-
         Thread customThread = new CustomThread();
         customThread.start();
     }
