@@ -40,6 +40,7 @@ public class AdditionCalculator extends Application {
         TextField resultField = new TextField();
         resultField.setEditable(false);
 
+        num1Field.setOnMouseClicked(mouseEvent -> resultField.clear());
 
         // Set event handler for the button
         addButton.setOnAction(e -> {
@@ -69,5 +70,25 @@ public class AdditionCalculator extends Application {
         Scene scene = new Scene(grid, 300, 200);
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+
+    private void setAddButtonHandler(Button addButton, TextField num1Field, TextField num2Field, TextField resultField) {
+        // Set event handler for the button
+        addButton.setOnAction(actionEvent -> {
+            try {
+                double num1 = Double.parseDouble(num1Field.getText());
+                double num2 = Double.parseDouble(num2Field.getText());
+                double result = num1 + num2;
+                resultField.setText(Double.toString(result));
+            } catch (NumberFormatException ex) {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText(null);
+                alert.setContentText("Invalid input");
+                alert.showAndWait();
+                resultField.clear();
+            }
+        });
+
     }
 }
