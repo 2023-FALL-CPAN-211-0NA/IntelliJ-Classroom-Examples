@@ -15,3 +15,15 @@ IntelliJ Project of Classroom Examples
 #### Week 3
 * File
 * Streams
+
+#### Week 4
+* Thread
+* Thread pool
+
+#### Week 5 & 6
+* JFX
+
+#### Week 8
+* ArrayList
+* LinkedList
+* Stack
